@@ -1,0 +1,18 @@
+# Cursor Rule: style
+
+## Language
+- TypeScript strict mode.
+- ESLint + Prettier; no stylistic overrides in files.
+
+## Naming
+- Functions: verbNoun
+- Booleans: is/has/should
+- Constants: UPPER_SNAKE for env-only, otherwise camelCase.
+
+## UI Style (if React)
+- Functional components.
+- Hooks > classes.
+- Tailwind or CSS Modules; no inline styles except dynamic one-offs.
+
+## Docs
+- JSDoc/TSDoc for exported functions/components.

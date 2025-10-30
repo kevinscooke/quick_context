@@ -1,0 +1,17 @@
+# Cursor Rule: architecture
+
+## Boundaries
+- UI (components) ↔ State (hooks) ↔ Services (api, data) ↔ Infra
+- No cross-layer imports skipping boundaries.
+
+## State
+- Local-first; lift only when shared.
+- Avoid global mutable singletons.
+
+## Data
+- DTOs at boundaries, map to domain models inside.
+- All IO behind interfaces (e.g., `services/`).
+
+## Security
+- No secrets in code; use env loading.
+- Validate all external inputs.

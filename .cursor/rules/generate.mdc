@@ -1,0 +1,17 @@
+# Cursor Rule: generate
+
+## Codegen Defaults
+- Output minimal diff with file paths.
+- Include type definitions and docstrings for public functions.
+- Prefer pure functions; isolate side effects.
+
+## Error Handling
+- Fail fast, return typed errors.
+- Log with context, not secrets.
+
+## Documentation
+- Update README or relevant Doc on changes.
+- Provide usage example when adding a public API.
+
+## Performance
+- Choose simplest thing first; annotate hotspots with TODO(perf).

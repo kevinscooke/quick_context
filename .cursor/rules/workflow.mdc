@@ -1,0 +1,21 @@
+# Cursor Rule: workflow
+
+## Branching
+- Feature branches: `feat/<short-scope>`
+- Fix branches: `fix/<short-scope>`
+- Chore: `chore/<scope>`
+
+## Commits (Conventional)
+- feat: user-facing change
+- fix: bug fix
+- chore/docs/test/build/refactor: as needed
+
+## PR Requirements
+- Link to PRD section or issue.
+- Checklist: tests updated, lint passes, screenshots for UI changes.
+- Include a brief “Why” and “Trade-offs”.
+
+## Testing
+- New logic → unit tests.
+- Data access → happy + failure paths.
+- UI → at least one interaction test per flow.
